@@ -1,0 +1,18 @@
+body{
+    background: red;
+}
+
+.topic{
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 25px 5px rgba(0,0,0,0.19);
+}
+
+.topic img{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+

@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container">
+    <form class="form-inline my-2 my-lg-0" style="display: flex; justify-content: space-between;">
+        <input class="form-control mr-sm-2" style="width: 75%; padding:20px; border-radius: 10px;" type="search" placeholder=" &#128269; Search" aria-label="Search">
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+        <button style="width: 20%; padding: 20px; border-radius: 10px; background-color: orangered; border: none;" class="search">&#128640; </button>
+      </form>
+
+<h4>What is New &#128293;</h4>
+
+<!-- <div class="topic">
+    <div style=" width: 30%;">
+        <img style="width: 100%;" src="{{url_for('static', filename='img/hi.jpg')}}" />
+    </div>
+    <div style="width: 60%;">
+    <h4>iSell</h4>
+    <h6>We sell all sorts of devices ranging from show your back.</h6>
+    </div>
+</div> -->
+
+<div class="topic">
+    <div style=" width: 30%;">
+        <img style="width: 70%; border-radius: 20px;" src="{{url_for('static', filename='img/rectangle.png')}}" />
+    </div>
+    <div style="width: 60%;">
+    <h4>iBuy</h4>
+    <h6 class="text-muted">We sell all sorts </h6>
+    </div>
+</div>
+
+<div class="topic">
+    <div style=" width: 30%;">
+        <img style="width: 70%; border-radius: 20px;" src="{{url_for('static', filename='img/rectangle.png')}}" />
+    </div>
+    <div style="width: 60%;">
+    <h4>iBuy</h4>
+    <h6 class="text-muted">We sell all sorts</h6>
+    </div>
+</div>
+
+<div class="topic">
+    <div style=" width: 30%;">
+        <img style="width: 70%; border-radius: 20px;" src="{{url_for('static', filename='img/rectangle.png')}}" />
+    </div>
+    <div style="width: 60%;">
+    <h4>iBuy</h4>
+    <h6 class="text-muted">We sell all sorts </h6>
+    </div>
+</div>
+
+<h4>Contact Us</h4>
+<div class="flex">
+    <img style="width: 20%; border-radius: 20px;" src="{{url_for('static', filename='img/rectangle.png')}}" />
+    <img style="width: 20%; border-radius: 20px;" src="{{url_for('static', filename='img/rectangle.png')}}" />
+    <img style="width: 20%; border-radius: 20px;" src="{{url_for('static', filename='img/rectangle.png')}}" />
+    <img style="width: 20%; border-radius: 20px;" src="{{url_for('static', filename='img/rectangle.png')}}" />
+
+</div>
+
+</div>
+
+{% endblock %}
