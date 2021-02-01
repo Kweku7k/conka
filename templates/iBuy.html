@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container">
+    <form class="form-inline my-2 my-lg-0" style="display: flex; justify-content: space-between;">
+        <input class="form-control mr-sm-2" style="width: 75%; padding:20px; border-radius: 10px;" type="search" placeholder=" &#128269; Search for a brand" aria-label="Search">
+        <button style="width: 20%; padding: 20px; border-radius: 10px; background-color: orangered; border: none;" class="search">&#128640; </button>
+      </form>
+
+<!-- Not appropriate for this section -->
+
+     
+
+      <a href="{{url_for('products', brand="Apple")}}">
+        <div class="topic">
+            <div class="holder">
+                <img style="width: 70%; margin-top: auto; margin-bottom: auto; padding-top: 10px;" src="{{url_for('static', filename='img/applelogo.png')}}" />
+            </div>
+            <div style="width: 60%;">
+            <h4>Apple</h4>
+            <h6 class="text-muted">We sell all sorts </h6>
+            </div>
+        </div>
+        </a>
+
+
+      <a href="{{url_for('ibuy')}}">
+        <div class="topic">
+            <div class="holder">
+                <img style="width: 100%; padding-top: 30px;" src="{{url_for('static', filename='img/samsunglogo.png')}}" />
+            </div>
+            <div style="width: 60%;">
+            <h4>Samsung</h4>
+            <h6 class="text-muted">We sell all sorts </h6>
+            </div>
+        </div>
+        </a>
+
+        
+
+        
+</div>
+{% endblock %}
+

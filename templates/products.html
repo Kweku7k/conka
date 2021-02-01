@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container">
+    <form class="form-inline my-2 my-lg-0" style="display: flex; justify-content: space-between;">
+        <input class="form-control mr-sm-2" style="width: 75%; padding:20px; border-radius: 10px;" type="search" placeholder=" &#128269; Search" aria-label="Search">
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+        <button style="width: 20%; padding: 20px; border-radius: 10px; background-color: orangered; border: none;" class="search">&#128640; </button>
+      </form>
+
+       <section>
+
+        <div style="display: flex; justify-content: space-around; flex: 0 50%; flex-wrap: wrap;">
+
+    
+            
+    <div class="product">
+        <a href="{{url_for('description')}}">
+            <img style="width: 100%; text-align: center; margin-left: auto; margin-right: auto; margin-bottom: 20px;" src="{{url_for('static', filename='img/iphone12.jpg')}}" />
+            <h6>iPhone 12</h6>
+            <h6 class="support">Ghc 3000</h6>
+        </a>
+    </div>
+
+    <div class="product">
+        <!-- <a href="{{url_for('description')}}"> -->
+            <img style="width: 100%; text-align: center; margin-left: auto; margin-right: auto; margin-bottom: 20px;" src="{{url_for('static', filename='img/iphone12.jpg')}}" />
+            <h6>iPhone 12 Pro</h6>
+            <h6 class="support">*out of stock*</h6>
+
+        <!-- </a> -->
+    </div>
+
+    <div class="product">
+        <!-- <a href="{{url_for('description')}}"> -->
+            <img style="width: 100%; text-align: center; margin-left: auto; margin-right: auto; margin-bottom: 20px;" src="{{url_for('static', filename='img/iphone12.jpg')}}" />
+            <h6>iPhone 12 Pro Max</h6>
+            <h6 class="support">*out of stock*</h6>
+
+        <!-- </a> -->
+    </div>
+
+    <div class="product">
+        <!-- <a href="{{url_for('description')}}"> -->
+            <img style="width: 100%; text-align: center; margin-left: auto; margin-right: auto; margin-bottom: 20px;" src="{{url_for('static', filename='img/iphone12.jpg')}}" />
+            <h6>iPhone 12 Mini</h6>
+            <h6 class="support">*out of stock*</h6>
+        <!-- </a> -->
+    </div>
+
+    
+        
+
+       
+        </div>
+
+
+      </section>
+{% endblock %}
+
+
