@@ -7,7 +7,7 @@ def hello_world():
 
 @app.route('/ibuy')
 def ibuy():
-    return render_template('ibuy.html')
+    return render_template('iBuy.html')
 
 @app.route('/<string:brand>')
 def products(brand):
