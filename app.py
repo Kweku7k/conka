@@ -3,11 +3,15 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return render_template('index.html')
+    return render_template('new.html')
 
 @app.route('/ibuy')
 def ibuy():
     return render_template('iBuy.html')
+
+@app.route('/new')
+def new():
+    return render_template('new.html')
 
 @app.route('/<string:brand>')
 def products(brand):
